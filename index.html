@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HairByGabby - Homepage</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="img/logo.png" alt="HairByGabby Logo" />
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="booking.html">Book</a></li> 
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-item-with-icon">
+        <a href="about.html"><i class="fas fa-user-circle"></i> About Us</a>
+        <a href="products.html"><i class="fas fa-box"></i> Products</a>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li class="nav-item-with-icon">
+        <a href="signup.html"><i class="fas fa-sign-in-alt"></i> Login/Sign Up</a> 
+      </li>
+      <li class="nav-item-with-icon">
+      <a href="search.html"><i class="fas fa-search"></i> Search</a>
+      </li>
+
+      <li class="nav-item-with-icon">
+        <a href="#"><span>🇹🇹</span> Trinidad</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Welcome Section -->
+  <section class="welcome">
+    <div class="welcome-heading">
+      <div class="welcome-line"></div>
+      <h1>Welcome to HairByGabby</h1>
+    </div>
+    <p>At HairByGabby, we specialize in <strong>empowering your beauty</strong> through exceptional hair care and styling.</p>
+    
+    <!-- Welcome Slideshow -->
+    <div class="welcome-slideshow">
+      <img src="img/salonservice.png" class="slide active" alt="Salon Image 1" />
+      <img src="img/salonservice2.png" class="slide" alt="Salon Image 2" />
+      <img src="img/salonservice3.png" class="slide" alt="Salon Image 3" />
+    </div>
+    <button class="book-btn">Book An Appointment</button>
+  </section>
+
+  <!-- Sign Up Promo Section -->
+  <section class="signup-promo">
+    <h2>Sign Up & Get 10% Off Your First Service!</h2>
+    <p>Join our family and enjoy exclusive discounts, updates, and styling tips from Gabby herself.</p>
+    <button class="signup-btn">Sign Up / Login</button>
+  </section>
+
+  <!-- Services Section -->
+<section class="services">
+  <div class="service-item">
+    <a href="services.html" style="text-decoration:none; color: inherit;">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/braiding.png" alt="Braiding" />
+            <p>Braiding</p>
+          </div>
+          <div class="flip-card-back">
+            <p>Protective & trendy styles for every hair type. Click to learn more!</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="service-item">
+    <a href="services.html" style="text-decoration:none; color: inherit;">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/treatment.png" alt="Hair Treatment" />
+            <p>Hair Treatments</p>
+          </div>
+          <div class="flip-card-back">
+            <p>Moisture, strength, and shine – tailored treatments for your needs.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="service-item">
+    <a href="services.html" style="text-decoration:none; color: inherit;">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/natural.png" alt="Natural Styles" />
+            <p>Natural Styles</p>
+          </div>
+          <div class="flip-card-back">
+            <p>Celebrate your curls and coils with expert styling and care.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 HairByGabby. All rights reserved.</p>
+      <p>
+        Location: 28 Sapphire Drive, Diego Martin, Diamond Vale, Trinidad & Tobago<br />
+        Phone: 1 (868) 395-7879 | Email: hairbygabby@gmail.com
+      </p>
+      <p>
+        Follow us:
+        <a href="#"><i class="fab fa-facebook-f footer-icon"></i></a>
+        <a href="#"><i class="fab fa-instagram footer-icon"></i></a>
+        <a href="#"><i class="fab fa-twitter footer-icon"></i></a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Slideshow Script -->
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlides() {
+      slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+      });
+      slides[slideIndex].classList.add("active");
+      slideIndex = (slideIndex + 1) % slides.length;
+      setTimeout(showSlides, 3500);
+    }
+
+    showSlides();
+  </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HairByGabby – Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header class="navbar">
+  <div class="logo">
+    <img src="img/logo.png" alt="HairByGabby Logo" />
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="booking.html">Book</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-item-with-icon">
+        <a href="about.html"><i class="fas fa-user-circle"></i> About Us</a>
+        <a href="products.html"><i class="fas fa-box"></i> Products</a>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li class="nav-item-with-icon">
+        <a href="signup.html"><i class="fas fa-sign-in-alt"></i> Login/Sign Up</a>
+      </li>
+      <li class="nav-item-with-icon">
+        <a href="#"><i class="fas fa-search"></i> Search</a>
+      </li>
+      <li class="nav-item-with-icon">
+        <a href="#"><span>🇹🇹</span> Trinidad</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+
+  <!-- MAIN PRODUCT SECTION -->
+  <section class="product-page">
+    <aside class="filters">
+      <h3>Filter by Price:</h3>
+      <div class="price-layers">
+        <label><input type="checkbox"/> Layer 1</label>
+        <label><input type="checkbox"/> Layer 2</label>
+        <label><input type="checkbox"/> Layer 3</label>
+        <label><input type="checkbox"/> Layer 4</label>
+      </div>
+      <h3>Filter by Category:</h3>
+      <label><input type="checkbox"/> Shampoo</label>
+      <label><input type="checkbox"/> Oils</label>
+      <label><input type="checkbox"/> Styling Creams</label>
+      <label><input type="checkbox"/> Conditioners</label>
+      <label><input type="checkbox"/> All Products</label>
+      <h3>Select Delivery Region:</h3>
+      <select class="delivery-select">
+        <option>Choose Region</option>
+        <option>East</option>
+        <option>West</option>
+        <option>South</option>
+        <option>North</option>
+      </select>
+    </aside>
+
+    <div class="product-results">
+      <div class="results-header">
+        <h2>Results</h2>
+        <input type="text" id="productSearch" placeholder="Search products..." />
+        <select>
+          <option>Price (High → Low)</option>
+          <option>Price (Low → High)</option>
+        </select>
+      </div>
+      <div class="product-grid">
+
+        <!-- PRODUCT 1 -->
+        <div class="product-card">
+          <img src="img/shampoo.png" alt="Salon In Shampoo"/>
+          <h4>Salon In Shampoo</h4>
+          <p class="price">$230.00</p>
+          <p class="desc"><strong>Why we love:</strong> Moisture-rich cleansing that reduces frizz and adds shine.</p>
+          <p class="desc"><strong>Ingredients:</strong> keratin, coconut oil, smoothing agents.</p>
+          <p class="desc"><strong>How to use:</strong> Apply to wet hair, lather, rinse; follow with conditioner.</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="product-card">
+          <img src="img/sheabutter.png" alt="Shea Treatment Oil"/>
+          <h4>Shea Treatment Oil</h4>
+          <p class="price">$150.00</p>
+          <p class="desc"><strong>Why we love:</strong> Deep hydrating oil that tames dryness & frizz.</p>
+          <p class="desc"><strong>Ingredients:</strong> Pure shea butter, vitamins & fatty acids. </p>
+          <p class="desc"><strong>How to use:</strong> Apply a few drops to ends or scalp; use daily or as needed.</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="product-card">
+          <img src="img/stylingcream.png" alt="No‑Frizz Styling Cream"/>
+          <h4>No‑Frizz Styling Cream</h4>
+          <p class="price">$100.00</p>
+          <p class="desc"><strong>Why we love:</strong> Controls frizz, smooths style, adds light hold.</p>
+          <p class="desc"><strong>Ingredients:</strong> Softening agents, humectants, nourishing oils.</p>
+          <p class="desc"><strong>How to use:</strong> Work a small amount through damp or dry hair to style.</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div class="product-card">
+          <img src="img/salon10clinic.png" alt="Salon 10 Clinic Treatment"/>
+          <h4>Salon 10 Clinic Treatment</h4>
+          <p class="price">$80.00</p>
+          <p class="desc"><strong>Why we love:</strong> Repairing treatment that strengthens and softens.</p>
+          <p class="desc"><strong>Ingredients:</strong> Protein complexes and conditioning agents.</p>
+          <p class="desc"><strong>How to use:</strong> Apply to clean damp hair, leave 5–10 minutes, rinse.</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+
+        <!-- PRODUCT 5 -->
+<div class="product-card">
+  <img src="img/karaste.png" alt="Kérastase Shampoo"/>
+  <h4>Kérastase Shampoo</h4>
+  <p class="price"><s>$280.00</s> <strong style="color: #00ffae;">$140.00 (50% OFF)</strong></p>
+  <p class="desc"><strong>Why we love:</strong> Luxurious formula restores strength & shine.</p>
+  <p class="desc"><strong>Ingredients:</strong> Amino acids, ceramides, nourishing oils.</p>
+  <p class="desc"><strong>How to use:</strong> Apply to wet hair, massage, rinse thoroughly.</p>
+  <button class="cart-btn">Add to Cart</button>
+</div>
+
+<!-- PRODUCT 6 -->
+<div class="product-card">
+  <img src="img/argonoil.png" alt="Moroccanoil Curl Cream"/>
+  <h4>Moroccanoil Curl Cream</h4>
+  <p class="price">$210.00</p>
+  <p class="desc"><strong>Why we love:</strong> Enhances curls while reducing frizz and flyaways.</p>
+  <p class="desc"><strong>Ingredients:</strong> Argan oil, curl-defining polymers.</p>
+  <p class="desc"><strong>How to use:</strong> Distribute through damp hair, scrunch, and air-dry or diffuse.</p>
+  <button class="cart-btn">Add to Cart</button>
+</div>
+
+<!-- PRODUCT 7 -->
+<div class="product-card">
+  <img src="img/gel.png" alt="Hair Wax Stick"/>
+  <h4>Hair Wax Stick</h4>
+  <p class="price">$90.00</p>
+  <p class="desc"><strong>Why we love:</strong> Great for edges and slicked-back styles with strong hold.</p>
+  <p class="desc"><strong>Ingredients:</strong> Castor oil, beeswax, fruit wax blend.</p>
+  <p class="desc"><strong>How to use:</strong> Apply directly to edges or flyaways; style as needed.</p>
+  <button class="cart-btn">Add to Cart</button>
+</div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 HairByGabby. All rights reserved.</p>
+      <p>Location: 28 Sapphire Drive, Diego Martin, Diamond Vale, Trinidad & Tobago<br/>Phone: 1 (868) 395‑7879 | Email: hairbygabby@gmail.com</p>
+      <p>Follow us:
+        <a href="#"><i class="fab fa-facebook-f footer-icon"></i></a>
+        <a href="#"><i class="fab fa-instagram footer-icon"></i></a>
+        <a href="#"><i class="fab fa-twitter footer-icon"></i></a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.cart-btn').forEach(btn => {
+      btn.addEventListener('click', ()=> alert('Added to cart!'));
+    });
+  </script>
+</body>
+</html>

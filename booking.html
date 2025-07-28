@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Appointment - HairByGabby</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="navbar">
+  <div class="logo">
+    <img src="img/logo.png" alt="HairByGabby Logo" />
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="booking.html">Book</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-item-with-icon">
+        <a href="about.html"><i class="fas fa-user-circle"></i> About Us</a>
+        <a href="products.html"><i class="fas fa-box"></i> Products</a>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li class="nav-item-with-icon">
+        <a href="signup.html"><i class="fas fa-sign-in-alt"></i> Login/Sign Up</a>
+      </li>
+      <li class="nav-item-with-icon">
+        <a href="#"><i class="fas fa-search"></i> Search</a>
+      </li>
+      <li class="nav-item-with-icon">
+        <a href="#"><span>🇹🇹</span> Trinidad</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Booking Section -->
+  <section class="booking-page" style="padding: 50px 30px; background-color: #0c1c2c; color: white;">
+    <h2 style="font-size: 20px; color: white; margin-bottom: 20px;">Book Appointment &gt;</h2>
+    
+
+    <p style="color: #999; font-size: 14px; margin-bottom: 20px;">Booking Policy</p>
+
+    <div style="margin-bottom: 40px;">
+      <h4 style="font-size: 16px; color: #ff69b4;">Braiding</h4>
+      <p style="font-size: 14px; margin: 8px 0 5px;">
+        Protective styles like box braids, knotless braids, feed-in cornrows, and flat twists offer a stylish way to protect your hair from damage while encouraging growth. These long-lasting styles reduce daily breakage, promote length retention, and come in various creative patterns to match your personal style. Each braiding session includes a gentle detangle, scalp care, and optional added hair for length or fullness.
+      </p>
+      <p style="color: #aaa; font-size: 13px;">Price Varies &nbsp;&nbsp; 35 mins+</p>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+      <h4 style="font-size: 16px; color: #ff69b4;">Natural Style</h4>
+      <p style="font-size: 14px; margin: 8px 0 5px;">
+        Our styling services enhance the beauty of your natural texture while protecting the health of your hair. Whether you choose a twist-out or braid-out for soft definition, a bold afro, a sleek high puff, or a gentle wash-and-go, each visit is crafted to bring out your confidence. We focus on moisture retention, low-manipulation techniques, and curl definition to ensure your hair looks and feels its best.
+      </p>
+      <p style="color: #aaa; font-size: 13px;">$250.00 &nbsp;&nbsp; 1hr</p>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+      <h4 style="font-size: 16px; color: #ff69b4;">Treatments</h4>
+      <p style="font-size: 14px; margin: 8px 0 5px;">
+        Healthy hair starts with proper care. Our treatment services are designed for textured and natural hair, providing hydration, strength and restoration. Options include deep conditioning masks, hot oil treatments to rebuild weak strands, and steam therapy sessions to restore shine and softness. Add scalp detox services to clear buildup and stimulate growth. All treatments are customized to your hair type and condition.
+      </p>
+      <p style="color: #aaa; font-size: 13px;">$400.00 &nbsp;&nbsp; 1hr+</p>
+    </div>
+
+    <div style="text-align: center; font-size: 15px; color: white;">
+    </div>
+  </section>
+
+   <!-- Booking Form -->
+    <form id="bookingForm" style="display: grid; gap: 30px;">
+      
+      <!-- Choose Service -->
+      <div>
+        <label for="service" style="font-size: 16px; color: #ff69b4;">Choose a Service</label><br>
+        <select id="service" name="service" required style="margin-top: 10px; padding: 10px; width: 100%; background-color: #1c1c2c; color: white; border: 1px solid #ff69b4; border-radius: 6px;">
+          <option value="">-- Select a Service --</option>
+          <option value="braiding">Braiding</option>
+          <option value="natural-style">Natural Style</option>
+          <option value="treatments">Treatments</option>
+        </select>
+      </div>
+
+      <!-- Choose Provider -->
+      <div>
+        <label for="provider" style="font-size: 16px; color: #ff69b4;">Choose a Stylist</label><br>
+        <select id="provider" name="provider" required style="margin-top: 10px; padding: 10px; width: 100%; background-color: #1c1c2c; color: white; border: 1px solid #ff69b4; border-radius: 6px;">
+          <option value="">-- Select a Stylist --</option>
+          <option value="gabby">Gabby (Owner + Lead Stylist)</option>
+          <option value="tiana">Tiana (Natural Hair Expert)</option>
+          <option value="mika">Mika (Braiding Specialist)</option>
+        </select>
+      </div>
+
+      <!-- Choose Date -->
+      <div>
+        <label for="date" style="font-size: 16px; color: #ff69b4;">Select a Date</label><br>
+        <input type="date" id="date" name="date" required style="margin-top: 10px; padding: 10px; width: 100%; background-color: #1c1c2c; color: white; border: 1px solid #ff69b4; border-radius: 6px;">
+      </div>
+
+      <!-- Personal Info -->
+      <div>
+        <label for="name" style="font-size: 16px; color: #ff69b4;">Your Full Name</label><br>
+        <input type="text" id="name" name="name" required placeholder="e.g. Danielle Ramsey" style="margin-top: 10px; padding: 10px; width: 100%; background-color: #1c1c2c; color: white; border: 1px solid #ff69b4; border-radius: 6px;">
+      </div>
+
+      <div>
+        <label for="email" style="font-size: 16px; color: #ff69b4;">Email Address</label><br>
+        <input type="email" id="email" name="email" required placeholder="e.g. daniella098@example.com" style="margin-top: 10px; padding: 10px; width: 100%; background-color: #1c1c2c; color: white; border: 1px solid #ff69b4; border-radius: 6px;">
+      </div>
+
+      <!-- Summary -->
+      <div id="summary" style="font-size: 14px; background-color: #1f1f2f; padding: 15px; border: 1px solid #ff69b4; border-radius: 8px;">
+        <strong>Appointment Summary:</strong>
+        <p id="summaryDetails" style="margin-top: 10px; color: #ccc;">Please select your details to see a summary.</p>
+      </div>
+
+      <!-- Submit Button -->
+      <div style="text-align: center;">
+        <button type="submit" class="book-btn">Confirm Booking</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- ... footer content ... -->
+  </footer>
+
+  <!-- Footer (Optional Reuse) -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 HairByGabby. All rights reserved.</p>
+      <p>
+        Location: 28 Sapphire Drive, Diego Martin, Diamond Vale, Trinidad & Tobago<br />
+        Phone: 1 (868) 395-7879 | Email: hairbygabby@gmail.com
+      </p>
+      <p>
+        Follow us:
+        <a href="#"><i class="fab fa-facebook-f footer-icon"></i></a>
+        <a href="#"><i class="fab fa-instagram footer-icon"></i></a>
+        <a href="#"><i class="fab fa-twitter footer-icon"></i></a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
